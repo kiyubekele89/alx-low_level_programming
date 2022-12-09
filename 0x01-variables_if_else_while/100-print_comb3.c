@@ -19,14 +19,15 @@ int main(void)
 	{
 		for (secondDigit = 1; secondDigit < 10; secondDigit++)
 		{
-			if (firstDigit == secondDigit)
-				continue;
-			putchar((firstDigit % 10) + '0');
-			putchar((secondDigit % 10) + '0');
-			if (firstDigit == 8 && secondDigit == 9)
-				continue;
-			putchar(',');
-			putchar(' ');
+			if (firstDigit != secondDigit)
+			{
+				putchar((firstDigit % 10) + '0');
+				putchar((secondDigit % 10) + '0');
+				if (firstDigit == 8 && secondDigit == 9)
+					continue;
+				putchar(',');
+				putchar(' ');
+			}
 		}
 	}
 	putchar('\n');
