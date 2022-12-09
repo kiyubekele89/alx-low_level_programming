@@ -21,7 +21,7 @@ int main(void)
 		{
 			if (firstDigit != secondDigit)
 			{
-				if (firstDigit + secondDigit != secondDigit + firstDigit)
+				if ((firstDigit + secondDigit) != (secondDigit + firstDigit))
 				{
 					putchar((firstDigit % 10) + '0');
 					putchar((secondDigit % 10) + '0');
