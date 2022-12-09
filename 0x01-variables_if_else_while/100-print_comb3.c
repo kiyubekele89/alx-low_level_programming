@@ -21,12 +21,14 @@ int main(void)
 		{
 			if (firstDigit != secondDigit)
 			{
-				putchar((firstDigit % 10) + '0');
-				putchar((secondDigit % 10) + '0');
-				if (firstDigit == 8 && secondDigit == 9)
-					continue;
-				putchar(',');
-				putchar(' ');
+				if (firstDigit + secondDigit != secondDigit + firstDigit)
+				{
+					putchar((firstDigit % 10) + '0');
+					putchar((secondDigit % 10) + '0');
+					if (firstDigit == 8 && secondDigit == 9)
+						continue;
+					putchar(',');
+				}	putchar(' ');
 			}
 		}
 	}
