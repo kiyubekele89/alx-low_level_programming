@@ -21,14 +21,13 @@ int main(void)
 		{
 			if (firstDigit != secondDigit)
 			{
-				if ((firstDigit + secondDigit) != (secondDigit + firstDigit))
-				{
+				if ((firstDigit % 10) + (secondDigit % 10)) != ((secondDigit % 10) + (firstDigit % 10))
 					putchar((firstDigit % 10) + '0');
 					putchar((secondDigit % 10) + '0');
 					if (firstDigit == 8 && secondDigit == 9)
 						continue;
 					putchar(',');
-				}	putchar(' ');
+					putchar(' ');
 			}
 		}
 	}
