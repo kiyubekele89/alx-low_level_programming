@@ -14,10 +14,11 @@ int main(void)
 	/* local variable declaration */
 	int firstDigit;
 	int secondDigit;
+	int digitAscend = 0;
 
-	for (firstDigit = 0; firstDigit < 9; firstDigit++)
+	for (firstDigit = 0; firstDigit < 9; digitAscend++, firstDigit++)
 	{
-		for (secondDigit = 1; secondDigit < 10; secondDigit++)
+		for (secondDigit = digitAscend + 1; secondDigit < 10; secondDigit++)
 		{
 			if (firstDigit == secondDigit)
 				continue;

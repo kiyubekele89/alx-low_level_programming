@@ -15,19 +15,14 @@ int main(void)
 	int firstDigit;
 	int secondDigit;
 	int lastDigit;
+	int i = 0;
 
-	for (firstDigit = 0; firstDigit < 8; firstDigit++)
+	for (firstDigit = 0; firstDigit < 8; i++, firstDigit++)
 	{
-		for (secondDigit = 1; secondDigit < 9; secondDigit++)
+		for (secondDigit = i + 1; secondDigit < 9; i++, secondDigit++)
 		{
-			for (lastDigit = 2; lastDigit < 10; lastDigit++)
+			for (lastDigit = i + 2; lastDigit < 10; lastDigit++)
 			{
-				if (firstDigit == secondDigit)
-					continue;
-				if (secondDigit == lastDigit)
-					continue;
-				if (firstDigit == lastDigit)
-					continue;
 				putchar((firstDigit % 10) + '0');
 				putchar((secondDigit % 10) + '0');
 				putchar((lastDigit % 10) + '0');
