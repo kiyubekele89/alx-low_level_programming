@@ -1,5 +1,5 @@
 /*
- * file: 4-print_alphabt.c
+ * date: December 9, 2022
  *
  * auth: eyarios bekele
  */
@@ -17,7 +17,7 @@ int main(void)
 	for (lowerCase = 'a'; lowerCase <= 'z'; lowerCase++)
 	{
 		if (lowerCase != 'e' && lowerCase != 'q')
-		{	
+		{
 			putchar(lowerCase);
 		}
 	}
