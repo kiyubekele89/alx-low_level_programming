@@ -14,5 +14,5 @@ int main(void)
         perror("write"); // Print an error message
         return 1; // Exit with a non-zero code
     }
-	return (1);
+	return (0);
 }
