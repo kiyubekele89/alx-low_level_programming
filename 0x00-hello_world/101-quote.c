@@ -7,12 +7,7 @@
  */
 int main(void)
 {
-  int result;
-	write(2, "and that piece of art is useful\" - Dora Korpar, 2015-10-19", 59);
-  if (result == -1) // Check for errors
-    {
-        perror("write"); // Print an error message
-        return 1; // Exit with a non-zero code
-    }
+  char *str = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
+	write(2, str, 59);
 	return (0);
 }
