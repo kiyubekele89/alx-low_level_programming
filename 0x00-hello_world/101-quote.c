@@ -1,13 +1,13 @@
 #include <unistd.h>
 
-/**
- * main - Entry point
- *
- * Return: Always 0(Success)
- */
 int main(void)
 {
-char *str = "and that piece of art is useful\" - Dora Korpar , 2015-10-19\n";
-	write(2,str, 59);
-	return (1);
+    char *message = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+    int length = 60;
+    int result = write(2, message, length);
+    if (result == -1)
+    {
+        return (1);
+    }
+    return (0);
 }
