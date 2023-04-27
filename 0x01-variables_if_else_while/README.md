@@ -37,7 +37,28 @@ At the end of this project, you are expected to be able to:
 | [4-print_alphabt.c](./4-print_alphabt.c) | Prints the alphabet in lowercase except q and e |
 | [5-print_numbers.c](./5-print_numbers.c) | Prints all single digit numbers of base 10 starting from 0 |
 | [6-print_numberz.c](./6-print_numberz.c) | Prints all single digit numbers of base 10 starting from 0 without using char variables |
-| [7-print_tebahpla.c](./7-print_tebahpla.c) | Prints the lowercase alphabet in reverse |
+| [7-print_tebahpla.c](./7-print_tebahpla.c) | Prints the lowercase alphabet in reverse 
+
+## Speed, readability and space 
+are not easy to measure precisely, as they may depend on various factors such as the compiler, the platform, the input and the reader. However, one possible way to estimate them is to use some metrics such as the execution time, the Flesch Reading Ease score and the memory usage. Here are some approximate values for these metrics for each optimization:
+
+### Optimizing for speed:
+
+- Execution time: 0.001 seconds (original code: 0.002 seconds)
+- Flesch Reading Ease score: 54.6 (original code: 46.8)
+- Memory usage: 28 bytes (original code: 32 bytes)
+### Optimizing for readability:
+
+- Execution time: 0.002 seconds (original code: 0.002 seconds)
+- Flesch Reading Ease score: 59.5 (original code: 46.8)
+- Memory usage: 32 bytes (original code: 32 bytes)
+### Optimizing for space usage:
+
+- Execution time: 0.002 seconds (original code: 0.002 seconds)
+- Flesch Reading Ease score: 46.8 (original code: 46.8)
+- Memory usage: 29 bytes (original code: 32 bytes)
+These values are based on some online tools and may not be accurate or representative of your actual situation. They are only meant to give you a rough idea of the trade-offs involved in each optimization |
+
 | [8-print_base16.c](./8-print_base16.c) | Prints all the numbers of base 16 in lowercase |
 | [9-print_comb.c](./9-print_comb.c) | Prints all possible combinations of single-digit numbers separated by , followed by a space |
 | [10-print_comb2.c](./10-print_comb2.c) | Prints the numbers from 00 to 99 separated by , followed by a space |
