@@ -31,6 +31,11 @@ int main(void)
 					putchar(' ');
 					putchar(digit3 + '0');
 					putchar(digit4 + '0');
+					if (digit1 == 9 && digit2 == 9)
+					{
+						if (digit3 == 8 && digit4 == 9)
+							continue;
+					}
 					putchar(',');
 					putchar(' ');
 				}
