@@ -16,9 +16,9 @@ int main(void)
 	/* loop through the first digit from 0 to 9 */
 	for (digit1 = 0; digit1 < 10; digit1++)
 	{
-		for (digit2 = 0; digit2 < 10; digit2++)
+		for (digit2 = 0; digit2 < 9; digit2++)
 		{
-			for (digit3 = 0; digit3 < 9; digit3++)
+			for (digit3 = 0; digit3 < 10; digit3++)
 			{
 				for (digit4 = 0; digit4 < 10; digit4++)
 				{
@@ -31,9 +31,9 @@ int main(void)
 					putchar(' ');
 					putchar(digit3 + '0');
 					putchar(digit4 + '0');
-					if (digit1 == 9 && digit2 == 9)
+					if (digit1 == 9 && digit2 == 8)
 					{
-						if (digit3 == 8 && digit4 == 9)
+						if (digit3 == 9 && digit4 == 9)
 							continue;
 					}
 					putchar(',');
