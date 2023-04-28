@@ -15,12 +15,12 @@ int main(void)
 	{
 		/* print the current digit */
 		putchar(digit + '0');
-		putchar(' ');
 		/* checks if it not equal to 9 */
 		if (digit != 9)
 		{
 			/* print a white space */
 			putchar(',');
+			putchar(' ');
 		}
 	}
 	/* print a newline character */
