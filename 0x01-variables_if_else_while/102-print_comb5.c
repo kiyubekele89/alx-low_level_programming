@@ -24,7 +24,7 @@ int main(void)
 					digit4 = digit2 + 1;
 				else
 					digit4 = 0;
-				for (digit4 = 0; digit4 < 10; digit4++)
+				for (; digit4 < 10; digit4++)
 				{
 					putchar(digit1 + '0');
 					putchar(digit2 + '0');
