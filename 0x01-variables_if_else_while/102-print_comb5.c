@@ -2,7 +2,7 @@
 
 /**
  * main - print all possible digit 2 two-digit
- *
+ *23
  * Return: Always 0(Success)
  */
 int main(void)
@@ -20,12 +20,12 @@ int main(void)
 		{
 			for (digit3 = 0; digit3 < 10; digit3++)
 			{
+				if (digit3 == 0)
+					digit4 = digit2 + 1;
+				else
+					digit4 = 0;
 				for (digit4 = 0; digit4 < 10; digit4++)
 				{
-					if (digit3 < 1)
-					{
-						digit4 = digit2 + 1;
-					}
 					putchar(digit1 + '0');
 					putchar(digit2 + '0');
 					putchar(' ');
