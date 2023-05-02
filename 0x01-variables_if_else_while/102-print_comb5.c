@@ -22,7 +22,7 @@ int main(void)
 			{
 				for (digit4 = 0; digit4 < 10; digit4++)
 				{
-					if (digit3 == 0 && digit4 == 0)
+					if (digit3 < 1)
 					{
 						digit4 = digit2 + 1;
 					}
