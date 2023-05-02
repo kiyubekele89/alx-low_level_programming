@@ -20,7 +20,7 @@ int main(void)
 		{
 			for (digit3 = 0; digit3 < 10; digit3++)
 			{
-				if (digit3 == 0)
+				if (digit3 == digit1)
 					digit4 = digit2 + 1;
 				else
 					digit4 = 0;
